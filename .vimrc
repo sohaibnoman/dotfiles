@@ -12,29 +12,16 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
+
+" plugins
 Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" 
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" 
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-commentary'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'valloric/youcompleteme'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,8 +39,16 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "
 " 
-set relativenumber
+
+" custom settings
 syntax on
 colorscheme onedark
 
+" variables
+set tabstop=4               "tab indent
+set shiftwidth=4            "'>' indent
+set expandtab               "make tab out of spaces
+set relativenumber
+
+" key map --
 inoremap jk    <esc>

@@ -56,3 +56,6 @@ set relativenumber
 
 " key map --
 inoremap jk    <esc>
+nmap cm    gc
+nmap cmm   gcc
+

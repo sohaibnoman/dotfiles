@@ -22,6 +22,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/nerdtree'
+Plugin 'ReplaceWithRegister'
+Plugin 'christoomey/vim-titlecase'
+Plugin 'christoomey/vim-system-copy'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

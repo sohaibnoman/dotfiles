@@ -14,18 +14,18 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 
 " plugins
-Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ReplaceWithRegister'
 Plugin 'christoomey/vim-titlecase'
 Plugin 'christoomey/vim-system-copy'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'AutoComplPop'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,6 +53,7 @@ set tabstop=4               "tab indent
 set shiftwidth=4            "'>' indent
 set expandtab               "make tab out of spaces
 set relativenumber
+set completeopt=longest,menuone
 
 " key map --
 inoremap jk    <esc>

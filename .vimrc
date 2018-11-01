@@ -20,8 +20,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
+Plugin 'mbbill/undotree'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'ReplaceWithRegister'
 Plugin 'christoomey/vim-titlecase'
 Plugin 'christoomey/vim-system-copy'
@@ -54,9 +55,20 @@ set shiftwidth=4            "'>' indent
 set expandtab               "make tab out of spaces
 set relativenumber
 set completeopt=longest,menuone
+set hlsearch
 
 " key map --
 inoremap jk    <esc>
 nmap cm    gc
 nmap cmm   gcc
+noremap  <C-n> :NERDTreeToggle<CR>
+nnoremap <C-u> :UndotreeToggle<cr>
 
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+ 
+" set persistant undo
+if has('persistent_undo')      "check if your vim version supports it
+    set undofile                 "turn on the feature  
+    set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+endif

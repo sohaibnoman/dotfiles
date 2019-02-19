@@ -15,3 +15,14 @@ now install all the plugins, by entering into vim and type
 ```
 :VundleInstall
 ```
+to make onedark work
+```
+cd .vim
+mkdir colors
+cd colors
+wget https://github.com/joshdick/onedark.vim/blob/master/colors/onedark.vim
+cd ..
+mkdir autoload
+cd autoload
+wget https://github.com/joshdick/onedark.vim/blob/master/autoload/onedark.vim
+```

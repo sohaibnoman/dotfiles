@@ -64,11 +64,20 @@ nmap cmm   gcc
 noremap  <C-n> :NERDTreeToggle<CR>
 nnoremap <C-u> :UndotreeToggle<cr>
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
- 
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 " set persistant undo
-if has('persistent_undo')      "check if your vim version supports it
-    set undofile                 "turn on the feature  
-    set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
+" Put plugins and dictionaries in this dir (also on Windows)
+let vimDir = '$HOME/.vim'
+let &runtimepath.=','.vimDir
+
+" Keep undo history across sessions by storing it in a file
+if has('persistent_undo')                           "check if your vim version supports it
+    let myUndoDir = expand(vimDir . '/undodir')     "directory where the undo files will be stored
+    " Create dirs
+    call system('mkdir ' . vimDir)
+    call system('mkdir ' . myUndoDir)
+    let &undodir = myUndoDir
+    set undofile                                    "turn on the feature
 endif

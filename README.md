@@ -23,3 +23,8 @@ to make onedark work, move into the folder .vim and excecute these two commands 
 mkdir colors && cd colors && wget https://raw.githubusercontent.com/joshdick/onedark.vim/master/colors/onedark.vim
 mkdir autoload && cd autoload && wget https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/onedark.vim
 ```
+to make command-t work, first install dependencies, then call rake make inside plugin repo
+```
+yum -y install gcc mysql-devel ruby-devel rubygems
+rake make
+```

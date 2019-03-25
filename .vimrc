@@ -28,6 +28,7 @@ Plugin 'christoomey/vim-titlecase'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'AutoComplPop'
 Plugin 'misterbuckley/vim-definitive'
+Plugin 'wincent/command-t'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -59,9 +60,10 @@ set hlsearch
 inoremap jk    <esc>
 nmap cm    gc
 nmap cmm   gcc
-noremap  <C-n> :NERDTreeToggle<CR>
-nnoremap <C-u> :UndotreeToggle<CR>
-nnoremap gd :FindDefinition<CR>
+noremap  <C-n>      :NERDTreeToggle<CR>
+nnoremap <C-u>      :UndotreeToggle<CR>
+nnoremap gd         :FindDefinition<CR>
+nnoremap <S-t>      :CommandT<CR>
 
 " map switch tab
 " nnoremap <C-S-tab>  :tabprevious<CR>
@@ -72,8 +74,8 @@ nnoremap <C-l>      :tabnext<CR>
 nnoremap <C-t>      :tabnew<CR>
 
 " open nerdtree when no file is selected on startup
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " close NERDTree if its the last open window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

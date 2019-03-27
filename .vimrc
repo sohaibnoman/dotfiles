@@ -29,6 +29,7 @@ Plugin 'christoomey/vim-system-copy'
 Plugin 'AutoComplPop'
 Plugin 'misterbuckley/vim-definitive'
 Plugin 'wincent/command-t'
+Plugin 'zivyangll/git-blame.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,18 +53,21 @@ colorscheme onedark
 set tabstop=4               "tab indent
 set shiftwidth=4            "'>' indent
 set expandtab               "make tab out of spaces
-set relativenumber
+set number relativenumber
 set completeopt=longest,menuone
 set hlsearch
 
 " key map --
 inoremap jk    <esc>
+vnoremap jk    <esc>
 nmap cm    gc
 nmap cmm   gcc
 noremap  <C-n>      :NERDTreeToggle<CR>
 nnoremap <C-u>      :UndotreeToggle<CR>
 nnoremap gd         :FindDefinition<CR>
-nnoremap <S-t>      :CommandT<CR>
+nnoremap <S-s>      :CommandT<CR>
+nnoremap gb         :GitBlame<CR>
+nnoremap <buffer> K :<C-u>execute "!pydoc " . expand("<cword>")<CR>
 
 " map switch tab
 " nnoremap <C-S-tab>  :tabprevious<CR>

@@ -26,7 +26,7 @@ yum -y install gcc mysql-devel ruby-devel rubygems
 rake make
 ```
 
-### Shell
+## Shell
 other useful programs for devoloping
 
 * PEP8 to check styling for python files

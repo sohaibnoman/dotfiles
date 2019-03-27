@@ -1,5 +1,11 @@
 # Dotfiles
 
+## Bash
+Remember to source the file after downloading
+```
+source .bashrc
+```
+
 ## Vim
 To use .vimrc, Vundle needs to be installed, this can be done by the line below
 ```
@@ -19,3 +25,10 @@ to make command-t work, first install dependencies, then call rake make inside p
 yum -y install gcc mysql-devel ruby-devel rubygems
 rake make
 ```
+
+### Shell
+other useful programs for devoloping
+
+* PEP8 to check styling for python files
+* Tig for better visualization og git history for files
+* Ack (grep -r) to search content in files 

@@ -32,3 +32,4 @@ other useful programs for devoloping
 * PEP8 to check styling for python files
 * Tig for better visualization og git history for files
 * Ack (grep -r) to search content in files 
+* Meld to handle merging conflicts in git

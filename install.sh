@@ -2,7 +2,11 @@
 
 for filname in $(pwd)/.*; do  
     if [ $(basename $filname) != ".git" ] && [ $(basename $filname) != "." ] && [ $(basename $filname) != ".." ]
-    then 
+    then
+        if [ -d ~/$(basename $filname) ]
+            then
+                rm -rf ~/$(basename $filname);
+            fi
         mv $(basename $filname) ~/$(basename $filename);
     fi
 done 

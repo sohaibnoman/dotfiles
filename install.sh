@@ -6,3 +6,5 @@ for filname in $(pwd)/.*; do
         mv $(basename $filname) ~/$(basename $filename);
     fi
 done 
+
+vim +PluginInstall +qall

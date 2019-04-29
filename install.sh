@@ -11,7 +11,6 @@ for filname in $(pwd)/.*; do
     fi
 done 
 
-cd
-rm -rf dotfiles
-source .bashrc
+source ~/.bashrc
 vim +PluginInstall +qall
+cd .. && rm -rf dotfiles && cd

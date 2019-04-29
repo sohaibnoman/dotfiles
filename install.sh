@@ -11,5 +11,6 @@ for filname in $(pwd)/.*; do
     fi
 done 
 
+cd ~/
 source .bashrc
 vim +PluginInstall +qall

@@ -1,0 +1,8 @@
+[user]
+    email = sohaib.n@icloud.com
+    name = Sohaib Ahmed
+[core]
+    editor = VIM
+[merge]
+    tool = meld #extMerge
+

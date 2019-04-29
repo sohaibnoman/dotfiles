@@ -7,7 +7,7 @@ for filname in $(pwd)/.*; do
             then
                 rm -rf ~/$(basename $filname);
             fi
-        mv $(basename $filname) ~/$(basename $filename);
+        mv $(basename $filname) ~/;
     fi
 done 
 

@@ -12,5 +12,6 @@ for filname in $(pwd)/.*; do
 done 
 
 cd ~/
+rm -rf dotfiles
 source .bashrc
 vim +PluginInstall +qall

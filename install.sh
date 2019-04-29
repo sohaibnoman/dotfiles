@@ -12,5 +12,5 @@ for filname in $(pwd)/.*; do
 done 
 
 source ~/.bashrc
-vim +PluginInstall +qall
-cd .. && rm -rf dotfiles && cd
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && vim +PluginInstall +qall
+cd .. && rm -rf dotfiles && cd ~/

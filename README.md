@@ -10,8 +10,10 @@ To install the dotfiles navigate to ```dotfiles``` and run the command below
 
 to make command-t work for vim, first install dependencies, then call rake make inside plugin repo
 ```
-yum -y install gcc mysql-devel ruby-devel rubygems
-rake make
+cd ~/.vim/bundle/command-t/ruby/command-t/ext/command-t
+sudo dnf install ruby-devel
+ruby extconf.rb
+make clean && make
 ```
 
 ## Shell

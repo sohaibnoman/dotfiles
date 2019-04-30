@@ -28,7 +28,7 @@ Plugin 'christoomey/vim-titlecase'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'AutoComplPop'
 Plugin 'misterbuckley/vim-definitive'
-Plugin 'wincent/command-t'
+" Plugin 'wincent/command-t'
 Plugin 'zivyangll/git-blame.vim'
 
 " All of your Plugins must be added before the following line

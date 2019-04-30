@@ -77,7 +77,8 @@ nnoremap <buffer> K :<C-u>execute "!pydoc " . expand("<cword>")<CR>
 nnoremap <C-d>      :tabclose<CR>
 nnoremap <C-h>      :tabprevious<CR>
 nnoremap <C-l>      :tabnext<CR>
-nnoremap <C-t>      :tabnew<CR>
+nnoremap <C-n>      :tabnew<CR>
+nnoremap <C-t>      :tab split<CR>
 
 " open nerdtree when no file is selected on startup
 " autocmd StdinReadPre * let s:std_in=1

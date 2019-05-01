@@ -3,7 +3,7 @@
 
 
 ## installation
-To install the dotfiles navigate to ```dotfiles``` and run the command below
+To install clone the directory and use the command below
 ```
 ./install.sh
 (cd /dotfiles; /a/install.sh)

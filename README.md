@@ -2,7 +2,7 @@
 
 
 
-## installation
+## Install
 To install clone the directory and use the command below
 ```
 (cd dotfiles/; ./install.sh)

@@ -5,8 +5,7 @@
 ## installation
 To install clone the directory and use the command below
 ```
-./install.sh
-(cd /dotfiles; /a/install.sh)
+(cd dotfiles/; ./install.sh)
 ```
 
 ## Shell

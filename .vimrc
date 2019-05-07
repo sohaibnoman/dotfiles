@@ -69,6 +69,7 @@ nnoremap gd         :FindDefinition<CR>
 nnoremap tgd        :tab split<CR> :FindDefinition<CR>
 nnoremap <S-s>      :CommandT<CR>
 nnoremap gb         :GitBlame<CR>
+"nnoremap gb        :Gblame<CR>
 nnoremap <buffer> K :<C-u>execute "!pydoc " . expand("<cword>")<CR>
 
 " map switch tab

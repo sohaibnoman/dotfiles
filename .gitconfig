@@ -2,7 +2,7 @@
     email = sohaib.n@icloud.com
     name = Sohaib Ahmed
 [core]
-    editor = VIM
+    editor = vim
 [merge]
     tool = meld #extMerge
 

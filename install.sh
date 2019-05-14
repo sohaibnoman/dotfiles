@@ -4,10 +4,10 @@ for filname in $(pwd)/.*; do
     if [ $(basename $filname) != ".git" ] && [ $(basename $filname) != "." ] && [ $(basename $filname) != ".." ]
     then
         if [ -d ~/$(basename $filname) ]
-            then
-                rm -rf ~/$(basename $filname);
-            fi
-            ln -s $(pwd)/$(basename $filname) ~/;
+        then
+            rm -rf ~/$(basename $filname);
+        fi
+        ln -sf $(pwd)/$(basename $filname) ~/;
     fi
 done 
 

@@ -3,6 +3,8 @@
     name = Sohaib Ahmed
 [core]
     editor = vim
+[color]
+    ui = auto
 [merge]
     tool = meld #extMerge
 

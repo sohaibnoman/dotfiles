@@ -1,5 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+" filetype plugin on
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -28,8 +29,8 @@ Plugin 'christoomey/vim-titlecase'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'AutoComplPop'
 Plugin 'misterbuckley/vim-definitive'
-Plugin 'wincent/command-t'
-Plugin 'zivyangll/git-blame.vim'
+" Plugin 'wincent/command-t'
+" Plugin 'zivyangll/git-blame.vim'
 Plugin 'idbrii/vim-ack'
 
 " All of your Plugins must be added before the following line
@@ -48,6 +49,7 @@ filetype plugin indent on    " required
 
 " custom settings
 syntax on
+" syntax enable
 colorscheme onedark
 
 " variables
@@ -58,6 +60,11 @@ set number relativenumber
 set completeopt=longest,menuone
 set hlsearch
 
+set path+=**
+set wildmenu
+
+command! MakeTags !ctags -R .
+
 " key map --
 inoremap jk    <esc>
 vnoremap jk    <esc>
@@ -65,21 +72,21 @@ nmap cm    gc
 nmap cmm   gcc
 noremap  <C-n>      :NERDTreeToggle<CR>
 nnoremap <C-u>      :UndotreeToggle<CR>
-nnoremap gd         :FindDefinition<CR>
-nnoremap tgd        :tab split<CR> :FindDefinition<CR>
-nnoremap <S-s>      :CommandT<CR>
-nnoremap gb         :GitBlame<CR>
+" nnoremap gd         :FindDefinition<CR>
+" nnoremap tgd        :tab split<CR> :FindDefinition<CR>
+" nnoremap <S-s>      :CommandT<CR>
+" nnoremap gb         :GitBlame<CR>
 "nnoremap gb        :Gblame<CR>
-nnoremap <buffer> K :<C-u>execute "!pydoc " . expand("<cword>")<CR>
+" nnoremap <buffer> K :<C-u>execute "!pydoc " . expand("<cword>")<CR>
 
 " map switch tab
 " nnoremap <C-S-tab>  :tabprevious<CR>
 " nnoremap <C-tab>    :tabnext<CR>
-nnoremap <C-d>      :tabclose<CR>
-nnoremap <C-h>      :tabprevious<CR>
-nnoremap <C-l>      :tabnext<CR>
+" nnoremap <C-d>      :tabclose<CR>
+" nnoremap <C-h>      :tabprevious<CR>
+" nnoremap <C-l>      :tabnext<CR>
 "nnoremap <C-n>      :tabnew<CR>
-nnoremap <C-t>      :tab split<CR>
+" nnoremap <C-t>      :tab split<CR>
 
 " open nerdtree when no file is selected on startup
 " autocmd StdinReadPre * let s:std_in=1

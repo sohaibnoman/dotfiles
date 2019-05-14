@@ -48,9 +48,10 @@ filetype plugin indent on    " required
 " 
 
 " custom settings
-syntax on
-" syntax enable
+syntax enable
 colorscheme onedark
+set path+=**
+set wildmenu
 
 " variables
 set tabstop=4               "tab indent
@@ -60,10 +61,8 @@ set number relativenumber
 set completeopt=longest,menuone
 set hlsearch
 
-set path+=**
-set wildmenu
-
-command! MakeTags !ctags -R .
+" commands
+command MakeTags !ctags -R .
 
 " key map --
 inoremap jk    <esc>
@@ -72,7 +71,7 @@ nmap cm    gc
 nmap cmm   gcc
 noremap  <C-n>      :NERDTreeToggle<CR>
 nnoremap <C-u>      :UndotreeToggle<CR>
-" nnoremap gd         :FindDefinition<CR>
+nnoremap gd         <C-]>
 " nnoremap tgd        :tab split<CR> :FindDefinition<CR>
 " nnoremap <S-s>      :CommandT<CR>
 " nnoremap gb         :GitBlame<CR>

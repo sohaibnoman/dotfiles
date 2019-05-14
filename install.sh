@@ -12,14 +12,15 @@ for file in $(pwd)/.*; do
         then
             ln -sf "$(pwd)/$filename" ~/;
         else
-            mv $filename ~/
+            cp -R $filename ~/
         fi
     fi
 done 
 
 # compile vim and bash
 source ~/.bashrc
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && vim +PluginInstall +qall
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
+vim +PluginInstall +qall
 
 # remove folder
 # cd .. && rm -rf dotfiles

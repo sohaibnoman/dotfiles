@@ -9,7 +9,7 @@ for file in $(pwd)/.*; do
             rm -rf ~/$filename;
         fi
 
-        if [ $filename != ".vim"]
+        if [ $filename != ".vim" ]
         then
             ln -sf $(pwd)/$(basename $filname) ~/;
         else

@@ -1,6 +1,6 @@
 #!/bin/bash
 for file in $(pwd)/.*; do
-    filename=$(basename $file)  
+    filename=$(basename $file)
     if [ $filename != ".git" ] && [ $filename != "." ] && [ $filename != ".." ]
     then
         if [ -d ~/$filename ]
@@ -10,9 +10,9 @@ for file in $(pwd)/.*; do
 
         if [ $filename != ".vim" ]
         then
-            ln -sf $(pwd)/$filname ~/;
+            ln -sf "$(pwd)/$filename" ~/;
         else
-            mv $filname ~/
+            mv $filename ~/
         fi
     fi
 done 

@@ -1,6 +1,6 @@
 #!/bin/bash
 for file in $(pwd)/.*; do
-    filename = $(basename $file)  
+    filename=$(basename $file)  
     if [ $filename != ".git" ] && [ $filename != "." ] && [ $filename != ".." ]
     then
         if [ -d ~/$filename ]

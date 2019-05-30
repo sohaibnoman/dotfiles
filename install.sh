@@ -1,12 +1,22 @@
 #!/bin/bash
 
-# install dependencies
-sudo dnf install vim
-sudo dnf install htop
-sudo dnf copr enable daniruiz/flat-remix
-sudo dnf install flat-remix-gnome
+user_dep="M"
 
-# make symlink for files
+# install dependencies
+while [ $user_dep != "Y" || $user_dep != "y" || $user_dep != "N" || $user_dep != "n" ]
+do
+	read -p "Do you want to install dependencies like vim , htop, flat-remix-icons? [Y/n]" $user_dep
+
+	if [ $user_dep == "Y" || $user_dep == "y" ]
+	then
+		sudo dnf install vim;
+		sudo dnf install htop;
+		sudo dnf copr enable daniruiz/flat-remix;
+		sudo dnf install flat-remix-gnome;
+	fi
+done
+
+# make links for files
 for file in $(pwd)/.*; do
     filename=$(basename $file)
     if [ $filename != ".git" ] && [ $filename != "." ] && [ $filename != ".." ]

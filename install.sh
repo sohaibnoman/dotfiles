@@ -3,14 +3,26 @@
 # install dependencies
 while true;
 do
-	read -p "Do you want to install dependencies like vim , htop, flat-remix-icons? [Y/n]: " user_dep
+	read -p "Do you want to install dependencies for fedora? [Y/n]: " user_dep
 
 	if [ $user_dep == "Y" ] || [ $user_dep == "y" ]
 	then
 		sudo dnf install vim;
-		sudo dnf install htop;
-		sudo dnf copr enable daniruiz/flat-remix;
-		sudo dnf install flat-remix-gnome;
+        sudo dnf install htop;
+
+        # choose icon pack
+        read -p "Do you want paper-icons [1] or flat-remix-icons [2]: " icons_coise
+        if [ $icons_coise == "1" ]
+        then 
+            sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:snwh:paper/Fedora_25/home:snwh:paper.repo
+            sudo dnf install paper-icon-theme
+        elif [ $icons_coise == "2" ]
+        then 
+		    sudo dnf copr enable daniruiz/flat-remix && sudo dnf install flat-remix
+        else
+            echo "Your choise dosent exist no icon pack installed"
+        fi
+        
         break;
     elif [ $user_dep == "N" ] || [ $user_dep == "n" ]
     then 

@@ -3,16 +3,16 @@
 # install dependencies
 while true;
 do
-	read -p "Do you want to install dependencies like vim , htop, flat-remix-icons? [Y/n]" $user_dep
+	read -p "Do you want to install dependencies like vim , htop, flat-remix-icons? [Y/n]: " user_dep
 
-	if [ $user_dep == "Y" || $user_dep == "y" ]
+	if [ $user_dep == "Y" ] || [ $user_dep == "y" ]
 	then
 		sudo dnf install vim;
 		sudo dnf install htop;
 		sudo dnf copr enable daniruiz/flat-remix;
 		sudo dnf install flat-remix-gnome;
         break;
-    elif [ $user_dep == "N" || $user_dep == "n" ]
+    elif [ $user_dep == "N" ] || [ $user_dep == "n" ]
     then 
         break;
 	fi

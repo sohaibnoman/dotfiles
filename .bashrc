@@ -30,7 +30,6 @@ export PATH=$PATH:/hom/inf3151/tools/bin
 alias bochsdgb='bochs -f /uio/hume/student-u01/sohaibn/.bochsrc_debug'
 
 # User specific aliases and functions
-alias ls="ll"
 alias ifi="ssh -YC sohaibn@login.ifi.uio.no"
 alias ifi_"sql=psql -h dbpg-ifi-kurs -U sohaibn -d sohaibn" # Foretrukket
 alias ifi_sql_fdb="psql -h dbpg-ifi-kurs -U sohaibn -d fdb" # Når du skal jobbe med filmdatabasen

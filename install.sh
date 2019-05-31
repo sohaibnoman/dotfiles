@@ -11,7 +11,7 @@ do
         sudo dnf install htop;
 
         # choose icon pack
-        read -p "Do you want paper-icons [1] or flat-remix-icons [2]: " icons_coise
+        read -p "Do you want paper-icons [1] or flat-remix-icons [2] or none [Enter]: " icons_coise
         if [ $icons_coise == "1" ]
         then 
             sudo dnf config-manager --add-repo https://download.opensuse.org/repositories/home:snwh:paper/Fedora_25/home:snwh:paper.repo && sudo dnf install paper-icon-theme

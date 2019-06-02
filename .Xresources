@@ -1,0 +1,12 @@
+! colors
+URxvt.foreground:   #00c00
+URxvt.background:   #222222
+
+! scrollBar
+URxvt.scrollBar:    False
+
+! fonts
+URxvt.font:         xft:Monospace:pixelsize=13
+
+! cursor
+URxvt.cursorColor:  #CCCCCC

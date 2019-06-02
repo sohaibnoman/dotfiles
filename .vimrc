@@ -46,7 +46,6 @@ set path+=**
 set wildignore+=**/tags/**
 set wildmenu
 syntax enable
-set t_Co=16
 colorscheme onedark
 
 " variables

@@ -42,7 +42,7 @@ for file in $(pwd)/.*; do
             rm -rf ~/$filename;
         fi
 
-        if [ $filename != ".vim" ]
+        if [ $filename != ".vim" ] && [ $filename != ".urxvt" ]
         then
             ln -sf "$(pwd)/$filename" ~/;
         else
@@ -50,6 +50,9 @@ for file in $(pwd)/.*; do
         fi
     fi
 done 
+
+# copy i3 folder to .config/
+# -- need to be done
 
 # compile vim and bash
 source ~/.bashrc

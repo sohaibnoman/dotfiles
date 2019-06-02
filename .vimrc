@@ -46,7 +46,7 @@ set path+=**
 set wildignore+=**/tags/**
 set wildmenu
 syntax enable
-set t_Co=256
+set t_Co=16
 colorscheme onedark
 
 " variables
@@ -68,6 +68,7 @@ nmap cmm   gcc
 noremap  <C-n>      :NERDTreeToggle<CR>
 nnoremap <C-u>      :UndotreeToggle<CR>
 nnoremap gd         <C-]>
+vnoremap <C-c>      "*y
 
 " map switch tab
 nnoremap <C-S-tab>  :tabprevious<CR>

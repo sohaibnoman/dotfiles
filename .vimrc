@@ -28,6 +28,7 @@ Plugin 'christoomey/vim-titlecase'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'AutoComplPop'
 Plugin 'misterbuckley/vim-definitive'
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

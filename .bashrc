@@ -15,7 +15,9 @@ export PATH
 xrdb ~/.Xresources
 
 source /usr/share/git-core/contrib/completion/git-prompt.sh
-export PS1='\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\] '
+# export PS1='\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\] '
+
+export PS1='\[\033[01;31m\]\u\[\033[00m\]\[\033[01;38m\]@\h \W\[\033[00m\]\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\] # '
 
 # alternative prompt
 # export PS1='\[\033[01;32m\][\u@\h\[\033[00m\] \W\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\]\[\033[01;32m\]]\$\[\033[00m\] '

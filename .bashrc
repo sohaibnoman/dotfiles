@@ -12,8 +12,6 @@ then
 fi
 export PATH
 
-xrdb ~/.Xresources
-
 # Fedora
 source /usr/share/git-core/contrib/completion/git-prompt.sh
 

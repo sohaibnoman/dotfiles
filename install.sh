@@ -3,7 +3,7 @@
 # install dependencies
 while true;
 do
-	read -p "Do you want to install dependencies for fedora? [N/y]: " user_dep
+	read -p "Do you want to install dependencies for fedora? [y/N]: " user_dep
 
 	if [ $user_dep == "Y" ] || [ $user_dep == "y" ]
 	then

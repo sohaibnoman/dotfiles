@@ -18,7 +18,7 @@ source /usr/share/git-core/contrib/completion/git-prompt.sh
 # Prompt
 # export PS1='\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\] '
 
-export PS1='\[\033[01;31m\]\u\[\033[00m\]\[\033[01;38m\]@\h \W\[\033[00m\]\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\] # '
+export PS1='\[\033[00;31m\]\u\[\033[00m\]\[\033[00;38m\]@\h \W\[\033[00m\]\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\] # '
 
 # alternative prompt
 # export PS1='\[\033[01;32m\][\u@\h\[\033[00m\] \W\[\033[01;33m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\033[00m\]\[\033[01;32m\]]\$\[\033[00m\] '
@@ -38,3 +38,5 @@ alias bochsdgb='bochs -f /uio/hume/student-u01/sohaibn/.bochsrc_debug'
 alias ifi="ssh -YC sohaibn@login.ifi.uio.no"
 alias ifi_sql="psql -h dbpg-ifi-kurs -U sohaibn -d sohaibn" # Foretrukket
 alias ifi_sql_fdb="psql -h dbpg-ifi-kurs -U sohaibn -d fdb" # Når du skal jobbe med filmdatabasen
+
+alias ll="ls -l"

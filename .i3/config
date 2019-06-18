@@ -94,8 +94,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
+set $ws1 "1: Terminal "
+set $ws2 "2: Chrome "
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
@@ -103,7 +103,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "10: Cute"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -128,6 +128,15 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+# open certain application in their dedicated workplace
+# $ xprop -> use this comman do get the class of an application
+# assign [class="URxvt"] $ws1
+assign [class="Google-chrome"] $ws2
+for_window [class="Google-chrome"] focus
+
+# auto start applications
+exec urxvt
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -170,13 +179,14 @@ bar {
         
          colors {
             background #25292E
-            statusline #FFFFFF
-            separator #666666
+            statusline #999999
+            separator #888888
             #                  border  backgr  text
-            focused_workspace  #333333 #424242 #999999
-            active_workspace   #333333 #5f676a #999999
-            inactive_workspace #333333 #222222 #888888
-            urgent_workspace   #2f343a #900000 #999999
+            # focused_workspace  #E06C75 #E06C75 #25292E
+            focused_workspace  #25292E #25292E #E06C75
+            active_workspace   #25292E #25292E #999999
+            inactive_workspace #25292E #25292E #999999
+            urgent_workspace   #25292E #25292E #98C379
          }
 }
 
@@ -198,3 +208,7 @@ bindsym XF86AudioPlay exec playerctl play
 bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+
+# Background image
+exec_always feh --bg-fill /usr/share/backgrounds/f29/default/standard/f29.png

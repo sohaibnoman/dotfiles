@@ -42,7 +42,7 @@ for file in $(pwd)/.*; do
             rm -rf ~/$filename;
         fi
 
-        if [ $filename != ".vim" ] && [ $filename != ".urxvt" ]
+        if [ $filename != ".vim" ]
         then
             ln -sf "$(pwd)/$filename" ~/;
         else
@@ -56,6 +56,5 @@ done
 
 # compile vim and bash
 source ~/.bashrc
-# xrdb ~/.Xresources
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && vim +PluginInstall +qall
 

@@ -21,11 +21,18 @@ other useful programs for devoloping
 my dotfiles are mainly made for i3, so here is some tricks for using I3
 
 ## network
- 
+
+```
 nmtui // for graphical network interface
- 
 nmcli dev wifi // show wifi list in terminal
 nmcli device wifi connect (wifi-name) // to connect to a wifi
- 
-##¤ to be able to connect to eduroam
-curl 'https://cat.eduroam.org/user/API.php?action=downloadInstaller&devise=linux&profile=430' | pytho    n
+```
+### to be able to connect to eduroam
+```
+curl 'https://cat.eduroam.org/user/API.php?action=downloadInstaller&devise=linux&profile=430' | python
+```
+
+Also good to install fir I3
+```
+sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky
+```

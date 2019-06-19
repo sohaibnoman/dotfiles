@@ -36,3 +36,8 @@ Also good to install fir I3
 ```
 sudo dnf install i3 i3status dmenu i3lock xbacklight feh conky
 ```
+
+For making the lockscreen work, you need scrot
+```
+dnf install scrot
+```

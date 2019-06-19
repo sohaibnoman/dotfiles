@@ -41,3 +41,10 @@ For making the lockscreen work, you need scrot
 ```
 dnf install scrot
 ```
+
+for using i3 blocks on fedora it need to be installed
+```
+sudo dnf -y copr enable wyvie/i3blocks
+sudo dnf install i3blocks
+```
+sudo dnf install pavucontrol

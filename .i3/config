@@ -98,7 +98,7 @@ bindsym $mod+a focus parent
 default_border pixel 1
 default_floating_border pixel 1
 
-gaps inner 10
+gaps inner 20
 
 smart_gaps on
 smart_borders on
@@ -202,7 +202,8 @@ client.urgent           $bg     $bg     $green  $bg
 # finds out, if available)
 bar {
         # status_command i3status
-        status_command i3blocks -c ~/.i3/i3blocks.conf
+        # status_command i3blocks -c ~/.i3/i3blocks.conf
+        status_command i3status
         position bottom
         font xft:URWGothic-Book 11
         
@@ -215,7 +216,7 @@ bar {
             focused_workspace  $bg     $bg     $white    
             active_workspace   $bg     $bg     $gray
             inactive_workspace $bg     $bg     $gray  
-            urgent_workspace   $bg     $red    $bg
+            urgent_workspace   $bg     $bg     $red
          }
 }
 

@@ -46,5 +46,7 @@ for using i3 blocks on fedora it need to be installed
 ```
 sudo dnf -y copr enable wyvie/i3blocks
 sudo dnf install i3blocks
-```
 sudo dnf install pavucontrol
+sudo dnf install light
+sudo dnf install redshift
+```

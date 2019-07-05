@@ -1,0 +1,10 @@
+
+set folder = "imaps://sohaibn@uio.no@imap.uio.no:993"
+set smtp_url = "smtps://sohaibn@uio.no@smtp.uio.no:587"
+
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Draft"
+
+mailboxes =INBOX =Sent =Trash =Draft =Junk =Other

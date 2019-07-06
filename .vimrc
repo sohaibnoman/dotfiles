@@ -48,6 +48,7 @@ set wildignore+=**/tags/**
 set wildmenu
 syntax enable
 let g:onedark_termcolors=16
+let g:airline_theme='base16_default'
 colorscheme onedark
 
 " variables
@@ -69,13 +70,12 @@ nmap cmm   gcc
 noremap  <C-n>      :NERDTreeToggle<CR>
 nnoremap <C-u>      :UndotreeToggle<CR>
 nnoremap gd         <C-]>
-vnoremap <C-c>      "*y
 
 " map switch tab
-nnoremap <C-S-tab>  :tabprevious<CR>
-nnoremap <C-tab>    :tabnext<CR>
-nnoremap <C-d>      :tabclose<CR>
-nnoremap <C-t>      :tabnew<CR>
+" nnoremap <C-S-tab>  :tabprevious<CR>
+" nnoremap <C-tab>    :tabnext<CR>
+" nnoremap <C-d>      :tabclose<CR>
+" nnoremap <C-t>      :tabnew<CR>
 
 " open nerdtree when no file is selected on startup
 " autocmd StdinReadPre * let s:std_in=1

@@ -1,10 +1,13 @@
 ! special
 *.foreground:   #ABB2BF
-*.background:   #282C34
+*.background:   #19161d
+! 19161d
+! 25292E -> fedora terminal
+! 282C34 -> one dark
 *.cursorColor:  #ABB2BF
 
 ! black
-*.color0:       #282C34
+*.color0:       #19161d
 *.color8:       #3E4452
 
 ! red
@@ -43,7 +46,7 @@ URxvt.font:                      9x15,xft:TerminessTTFNerdFontMono
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#25292E
+URxvt.background:                 [100]#19161d
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true

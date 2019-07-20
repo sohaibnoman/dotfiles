@@ -50,3 +50,6 @@ sudo dnf install pavucontrol
 sudo dnf install light
 sudo dnf install redshift
 ```
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-29.noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-29.noarch.rpm
+sudo dnf install ffmpeg
+to make videos work

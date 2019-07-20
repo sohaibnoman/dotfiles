@@ -1,9 +1,11 @@
 ! special
-*.foreground:   #ABB2BF
+!*.foreground:   #ABB2BF
+*.foreground:   #9c9c9c
 *.background:   #19161d
 ! 19161d
 ! 25292E -> fedora terminal
 ! 282C34 -> one dark
+! 222D31 -> manjaro
 *.cursorColor:  #ABB2BF
 
 ! black

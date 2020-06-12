@@ -3,9 +3,9 @@
 " ---------------------------------------------
 
 set relativnumbers
-set rnu
+set rnu 
+set commentary
 
-" ---------------
 " Color
 " ---------------
 " colorscheme monokai-chris
@@ -40,6 +40,9 @@ set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
 " Create newlines without entering insert mode
 nnoremap go o<Esc>k
 nnoremap gO O<Esc>j
+nnoremap rr :action Run<cr>
+nnoremap ss :action Android.SyncProject<cr>
+map \r :action ReformatCode<CR>
 
 " ---------------
 " Insert Mode Mappings

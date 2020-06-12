@@ -48,7 +48,7 @@ set wildignore+=**/tags/**
 set wildmenu
 syntax enable
 let g:onedark_termcolors=16
-let g:airline_theme='base16_default'
+" let g:airline_theme='base16_default'
 colorscheme onedark
 
 " variables

@@ -17,6 +17,20 @@ other useful programs for devoloping
 * Ack (grep -r) to search content in files 
 * Meld to handle merging conflicts in git
 
+## Atom One Dark for Terminal 
+
+Colors not working?
+
+Colors are not enabled by default in macOS Terminal, so you will need to enable colors in order for this theme to work. To do this, append the following to your ~/.bashrc file, then restart Terminal
+```
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+```
+This one line will do that for you. Copy and paste it into a Terminal window, hit return, then restart Terminal.
+```
+echo -e '\n# Add colors to Terminal\nexport CLICOLOR=1\nexport LSCOLORS=GxFxCxDxBxegedabagaced' >> ~/.bashrc
+```
+
 ## I3
 my dotfiles are mainly made for i3, so here is some tricks for using I3
 
